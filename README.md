@@ -7,7 +7,7 @@ This website showcases my **projects**, **skills**, **experience**, and includes
 
 ## 🌐 Live Website
 
-👉 [Visit Portfolio Site](https://lifeer-app.vercel.app/)  
+👉 [Visit Portfolio Site]([https://lifeer-app.vercel.app/](https://portfolio-main-aayusharya.vercel.app/))  
 👉 [GitHub Profile](https://github.com/AayushArya28)  
 👉 [LinkedIn](https://www.linkedin.com/in/aayusharyaiam/)  
 👉 [LeetCode](https://leetcode.com/u/aayusharya_i_am/)
