@@ -22,9 +22,8 @@ This website showcases my **projects**, **skills**, **experience**, and includes
 - 🗃️ **MySQL** for structured content like skills, projects, and achievements  
 - 📥 Downloadable Resume  
 - 📬 Contact form with database storage  
-- 🔎 Responsive and SEO-friendly  
-- 🌑 Dark Mode support (optional)
-
+- 🔎 Responsive and SEO-friendly
+- 
 ---
 
 ## 🧩 Sections
@@ -34,7 +33,7 @@ This website showcases my **projects**, **skills**, **experience**, and includes
 - **Projects** – Showcasing work like:
   - [Lifeer App](https://lifeer-app.vercel.app/) – Full-stack productivity dashboard  
   - Technika’24 Frontend  
-  - IMPACT'25 Conference Website  
+  - [IMPACT'25](https://impact2025.bitmesra.ac.in/) Conference Website  
 - **Skills** – Frontend, Backend, DBs, Tools  
 - **Experience** – Chegg India and internships  
 - **LeetCode & GitHub Stats** – CP Profile and GitHub activity  
@@ -47,13 +46,12 @@ This website showcases my **projects**, **skills**, **experience**, and includes
 ### 🔹 Frontend
 - React.js
 - Tailwind CSS
-- Framer Motion (optional)
 - Axios / Fetch API
 
 ### 🔹 Backend
 - Go (Golang) – REST APIs using `Gin` or `Fiber`
 - Firebase Authentication (for Lifeer App)
-- Node.js (optional blog system)
+- Node.js
 
 ### 🔹 Database
 - MongoDB Atlas – Unstructured data (form, blogs)
