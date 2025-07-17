@@ -1,73 +1,79 @@
-# Welcome to your Lovable project
+# 🧑‍💻 Aayush Arya — Portfolio Website
 
-## Project info
+Welcome to the official repository for my personal developer portfolio!  
+This website showcases my **projects**, **skills**, **experience**, and includes integrations with **Golang backend**, **MongoDB**, and **MySQL** for a dynamic and full-stack experience.
 
-**URL**: https://lovable.dev/projects/98580688-0294-497e-adc8-dd494a6ebbc2
+---
 
-## How can I edit this code?
+## 🌐 Live Website
 
-There are several ways of editing your application.
+👉 [Visit Portfolio Site](https://lifeer-app.vercel.app/)  
+👉 [GitHub Profile](https://github.com/AayushArya28)  
+👉 [LinkedIn](https://www.linkedin.com/in/aayusharyaiam/)  
+👉 [LeetCode](https://leetcode.com/u/aayusharya_i_am/)
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/98580688-0294-497e-adc8-dd494a6ebbc2) and start prompting.
+## 🚀 Features
 
-Changes made via Lovable will be committed automatically to this repo.
+- ⚡ **Modern UI** with ReactJS + Tailwind CSS  
+- 🔐 **Backend** using Go (Golang) with REST API  
+- 💾 **MongoDB** for form submissions & blog (optional)  
+- 🗃️ **MySQL** for structured content like skills, projects, and achievements  
+- 📥 Downloadable Resume  
+- 📬 Contact form with database storage  
+- 🔎 Responsive and SEO-friendly  
+- 🌑 Dark Mode support (optional)
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🧩 Sections
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Home** – Hero introduction with call to action  
+- **About Me** – Education, career goals, and resume  
+- **Projects** – Showcasing work like:
+  - [Lifeer App](https://lifeer-app.vercel.app/) – Full-stack productivity dashboard  
+  - Technika’24 Frontend  
+  - IMPACT'25 Conference Website  
+- **Skills** – Frontend, Backend, DBs, Tools  
+- **Experience** – Chegg India and internships  
+- **LeetCode & GitHub Stats** – CP Profile and GitHub activity  
+- **Contact** – Form with MongoDB backend & social links
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🛠️ Tech Stack
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
+### 🔹 Frontend
+- React.js
 - Tailwind CSS
+- Framer Motion (optional)
+- Axios / Fetch API
 
-## How can I deploy this project?
+### 🔹 Backend
+- Go (Golang) – REST APIs using `Gin` or `Fiber`
+- Firebase Authentication (for Lifeer App)
+- Node.js (optional blog system)
 
-Simply open [Lovable](https://lovable.dev/projects/98580688-0294-497e-adc8-dd494a6ebbc2) and click on Share -> Publish.
+### 🔹 Database
+- MongoDB Atlas – Unstructured data (form, blogs)
+- MySQL (PlanetScale / Railway) – Structured data (skills, projects)
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
+## 🧰 How to Run Locally
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+```bash
+# Clone the repository
+git clone https://github.com/AayushArya28/portfolio-website.git
+cd portfolio-website
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+# Install frontend dependencies
+cd client
+npm install
+npm run dev
+
+# Setup backend
+cd ../server
+go mod tidy
+go run main.go
