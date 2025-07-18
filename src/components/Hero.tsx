@@ -26,7 +26,7 @@ export const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl animate-fade-in-up">
         <div className="mb-6">
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-4 break-words">
+          <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 break-words leading-tight">
             <span className="text-gradient">Aayush</span>{' '}
             <span className="text-foreground">Arya</span>
           </h1>
