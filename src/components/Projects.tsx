@@ -40,7 +40,7 @@ export const Projects = () => {
       "tech": ["Python", "Git", "Shell Scripting"],
       "status": "Completed",
       "role": "Sole Developer",
-      "githubUrl": "https://github.com/AayushArya28/hacktheactivitygraph",
+      liveUrl: "https://github.com/AayushArya28?tab=overview&from=2024-12-01&to=2024-12-31",
       "highlights": ["GitHub Graph Manipulation", "Commit Automation", "Custom Pattern Creation", "Date Manipulation"]
     },
     {
