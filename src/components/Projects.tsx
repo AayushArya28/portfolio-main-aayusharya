@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { ExternalLink, Github, Calendar, Users } from 'lucide-react';
+import { ExternalLink, Github, Users } from 'lucide-react';
 
 export const Projects = () => {
   const projects = [
@@ -12,7 +12,7 @@ export const Projects = () => {
       status: "In Development",
       role: "Full Stack Developer",
       liveUrl: "https://lifeer-app.vercel.app/",
-      githubUrl: "https://github.com/AayushArya28",
+      githubUrl: "https://github.com/AayushArya28/lifeer-app",
       highlights: ["User Authentication", "Real-time Updates", "Responsive Design", "RESTful APIs"]
     },
     {
@@ -29,17 +29,27 @@ export const Projects = () => {
       description: "Professional conference website with speaker profiles, schedule management, and attendee registration. Features modern design with smooth animations and user-friendly interface.",
       tech: ["React", "TailwindCSS", "JavaScript", "HTML5"],
       status: "Completed",
-      role: "UI/UX Developer",
+      role: "Frontend Developer, UI/UX Developer",
+      liveUrl: "https://impact2025.bitmesra.ac.in/",
       githubUrl: "https://github.com/AayushArya28",
       highlights: ["Speaker Profiles", "Schedule Display", "Registration Form", "Smooth Animations"]
     },
     {
+      "title": "Hack the Github Graph",
+      "description": "A Python script that automates creating back-dated commits, allowing users to 'paint' custom patterns onto their GitHub contribution activity graph.",
+      "tech": ["Python", "Git", "Shell Scripting"],
+      "status": "Completed",
+      "role": "Sole Developer",
+      "githubUrl": "https://github.com/AayushArya28/hacktheactivitygraph",
+      "highlights": ["GitHub Graph Manipulation", "Commit Automation", "Custom Pattern Creation", "Date Manipulation"]
+    },
+    {
       title: "JEE Advanced Question Bank",
       description: "Comprehensive compilation of JEE Advanced questions with categorized topics, difficulty levels, and detailed solutions. Aimed at helping students prepare effectively for competitive exams.",
-      tech: ["HTML5", "CSS3", "JavaScript", "PDF Processing"],
+      tech: ["Content Developer", "PDF Processing"],
       status: "Completed",
       role: "Content Developer",
-      githubUrl: "https://github.com/AayushArya28",
+      // githubUrl is intentionally omitted here
       highlights: ["Question Categorization", "Difficulty Levels", "Search Functionality", "PDF Generation"]
     }
   ];
@@ -48,7 +58,7 @@ export const Projects = () => {
     <section id="projects" className="py-20 px-4 bg-muted/20">
       <div className="max-w-6xl mx-auto">
         <h2 className="section-title">My Projects</h2>
-        
+
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <Card key={index} className="project-card group">
@@ -66,12 +76,12 @@ export const Projects = () => {
                   {project.role}
                 </div>
               </CardHeader>
-              
+
               <CardContent>
                 <p className="text-muted-foreground mb-4 leading-relaxed">
                   {project.description}
                 </p>
-                
+
                 {/* Tech Stack */}
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((tech, techIndex) => (
@@ -80,7 +90,7 @@ export const Projects = () => {
                     </Badge>
                   ))}
                 </div>
-                
+
                 {/* Highlights */}
                 <div className="mb-4">
                   <h4 className="font-semibold mb-2 text-sm">Key Features:</h4>
@@ -93,18 +103,26 @@ export const Projects = () => {
                     ))}
                   </div>
                 </div>
-                
+
                 {/* Action Buttons */}
                 <div className="flex gap-2">
-                  <Button size="sm" className="btn-primary">
-                    <Github className="mr-2 h-4 w-4" />
-                    Code
-                  </Button>
+                  {/* Conditionally render Code button if githubUrl exists */}
+                  {project.githubUrl && (
+                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                      <Button size="sm" className="btn-primary">
+                        <Github className="mr-2 h-4 w-4" />
+                        Code
+                      </Button>
+                    </a>
+                  )}
+                  {/* Conditionally render Live Demo button if liveUrl exists */}
                   {project.liveUrl && (
-                    <Button size="sm" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                      <ExternalLink className="mr-2 h-4 w-4" />
-                      Live Demo
-                    </Button>
+                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                      <Button size="sm" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                        <ExternalLink className="mr-2 h-4 w-4" />
+                        Live Demo
+                      </Button>
+                    </a>
                   )}
                 </div>
               </CardContent>
