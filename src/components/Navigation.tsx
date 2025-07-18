@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu, Home, User, Briefcase, Code, Mail, FileText } from 'lucide-react';
-import { ThemeToggle } from './ThemeToggle';
+import profImage from '@/assets/prof.jpg';
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -70,8 +70,8 @@ export const Navigation = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold">A</span>
+            <div className="w-8 h-8 rounded-lg overflow-hidden">
+              <img src={profImage} alt="Aayush Arya" className="w-full h-full object-cover" />
             </div>
             <span className="text-xl font-bold text-gradient">Aayush Arya</span>
           </div>
@@ -81,12 +81,10 @@ export const Navigation = () => {
             <nav>
               <NavLinks />
             </nav>
-            <ThemeToggle />
           </div>
 
           {/* Mobile Menu */}
           <div className="flex items-center gap-2 md:hidden">
-            <ThemeToggle />
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="sm">
@@ -96,8 +94,8 @@ export const Navigation = () => {
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
               <div className="flex flex-col h-full">
                 <div className="flex items-center gap-2 mb-8">
-                  <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                    <span className="text-primary-foreground font-bold">A</span>
+                  <div className="w-8 h-8 rounded-lg overflow-hidden">
+                    <img src={profImage} alt="Aayush Arya" className="w-full h-full object-cover" />
                   </div>
                   <span className="text-xl font-bold text-gradient">Aayush Arya</span>
                 </div>
