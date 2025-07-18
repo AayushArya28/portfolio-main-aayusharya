@@ -1,0 +1,112 @@
+%PDF-1.4
+1 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+
+2 0 obj
+<<
+/Type /Pages
+/Kids [3 0 R]
+/Count 1
+>>
+endobj
+
+3 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 4 0 R
+/Resources <<
+/Font <<
+/F1 5 0 R
+>>
+>>
+>>
+endobj
+
+4 0 obj
+<<
+/Length 1000
+>>
+stream
+BT
+/F1 24 Tf
+50 750 Td
+(Aayush Arya) Tj
+0 -40 Td
+/F1 14 Tf
+(Frontend Developer & Tech Enthusiast) Tj
+0 -30 Td
+(Email: aayush10738@gmail.com) Tj
+0 -20 Td
+(Phone: +91 8603128570) Tj
+0 -20 Td
+(Location: Patna, India) Tj
+0 -40 Td
+/F1 16 Tf
+(EDUCATION) Tj
+0 -25 Td
+/F1 12 Tf
+(B.Tech in Electronics and Communication) Tj
+0 -15 Td
+(BIT Patna (2024-2028)) Tj
+0 -40 Td
+/F1 16 Tf
+(SKILLS) Tj
+0 -25 Td
+/F1 12 Tf
+(• HTML5, CSS3, JavaScript, ReactJS) Tj
+0 -15 Td
+(• TailwindCSS, Responsive Design) Tj
+0 -15 Td
+(• Go (Golang), REST API Development) Tj
+0 -15 Td
+(• MongoDB, MySQL, Firebase) Tj
+0 -40 Td
+/F1 16 Tf
+(EXPERIENCE) Tj
+0 -25 Td
+/F1 12 Tf
+(Chegg India - Computer Science Expert (May 2025-Present)) Tj
+0 -40 Td
+/F1 16 Tf
+(PROJECTS) Tj
+0 -25 Td
+/F1 12 Tf
+(• Lifeer App - Full-stack development with React & Go) Tj
+0 -15 Td
+(• Portfolio Website - Modern responsive design) Tj
+0 -15 Td
+(• Various web applications using modern tech stack) Tj
+ET
+endstream
+endobj
+
+5 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica
+>>
+endobj
+
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000245 00000 n 
+0000001297 00000 n 
+trailer
+<<
+/Size 6
+/Root 1 0 R
+>>
+startxref
+1365
+%%EOF

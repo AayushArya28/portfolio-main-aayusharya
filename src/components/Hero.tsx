@@ -1,6 +1,7 @@
 import { ArrowDown, Github, Linkedin, Code, FileText } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import heroBg from '@/assets/hero-bg.jpg';
+import resume from '@/assets/AayushArya_Resume.pdf';
 
 export const Hero = () => {
   return (
@@ -25,7 +26,7 @@ export const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl animate-fade-in-up">
         <div className="mb-6">
-          <h1 className="text-5xl md:text-7xl font-bold mb-4">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-4 break-words">
             <span className="text-gradient">Aayush</span>{' '}
             <span className="text-foreground">Arya</span>
           </h1>
@@ -40,9 +41,11 @@ export const Hero = () => {
         
         {/* Call to Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-          <Button className="btn-glow group">
-            <FileText className="mr-2 h-4 w-4 transition-transform group-hover:scale-110" />
-            View Resume
+          <Button className="btn-glow group" asChild>
+            <a href={resume} target="_blank" rel="noopener noreferrer">
+              <FileText className="mr-2 h-4 w-4 transition-transform group-hover:scale-110" />
+              View Resume
+            </a>
           </Button>
           <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
             <Code className="mr-2 h-4 w-4" />
