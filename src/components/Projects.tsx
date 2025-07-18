@@ -43,15 +43,6 @@ export const Projects = () => {
       liveUrl: "https://github.com/AayushArya28?tab=overview&from=2024-12-01&to=2024-12-31",
       "highlights": ["GitHub Graph Manipulation", "Commit Automation", "Custom Pattern Creation", "Date Manipulation"]
     },
-    {
-      title: "JEE Advanced Question Bank",
-      description: "Comprehensive compilation of JEE Advanced questions with categorized topics, difficulty levels, and detailed solutions. Aimed at helping students prepare effectively for competitive exams.",
-      tech: ["Content Developer", "PDF Processing"],
-      status: "Completed",
-      role: "Content Developer",
-      // githubUrl is intentionally omitted here
-      highlights: ["Question Categorization", "Difficulty Levels", "Search Functionality", "PDF Generation"]
-    }
   ];
 
   return (
