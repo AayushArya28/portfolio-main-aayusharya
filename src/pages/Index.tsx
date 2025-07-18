@@ -27,7 +27,7 @@ const Index = () => {
       <footer className="bg-card border-t border-border py-8">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <p className="text-muted-foreground">
-            © 2024 Aayush Arya. Built with React, TailwindCSS, and lots of ☕
+            © 2025 Aayush Arya. Built with React, TailwindCSS, and lots of ☕
           </p>
           <p className="text-sm text-muted-foreground mt-2">
             Designed and developed with passion for clean code and beautiful UX
