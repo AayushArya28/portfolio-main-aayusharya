@@ -4,6 +4,12 @@ import heroBg from '@/assets/hero-bg.jpg';
 import resume from '@/assets/AayushArya_Resume.pdf';
 
 export const Hero = () => {
+  const scrollToProjects = () => {
+    const element = document.getElementById('projects');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -47,7 +53,7 @@ export const Hero = () => {
               View Resume
             </a>
           </Button>
-          <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+          <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground" onClick={scrollToProjects}>
             <Code className="mr-2 h-4 w-4" />
             My Projects
           </Button>
