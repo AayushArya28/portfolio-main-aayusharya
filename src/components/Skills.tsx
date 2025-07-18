@@ -8,41 +8,41 @@ export const Skills = () => {
       title: "Frontend Development",
       icon: <Globe className="h-6 w-6 text-primary" />,
       skills: [
-        { name: "HTML5", level: 90 },
-        { name: "CSS3", level: 85 },
-        { name: "JavaScript", level: 80 },
-        { name: "React", level: 75 },
-        { name: "TailwindCSS", level: 85 }
+        { name: "HTML5" },
+        { name: "CSS3" },
+        { name: "JavaScript" },
+        { name: "React" },
+        { name: "TailwindCSS" }
       ]
     },
     {
       title: "Backend Development",
       icon: <Database className="h-6 w-6 text-primary" />,
       skills: [
-        { name: "Go (Golang)", level: 70 },
-        { name: "REST APIs", level: 75 },
-        { name: "MongoDB", level: 70 },
-        { name: "MySQL", level: 65 }
+        { name: "Go (Golang)" },
+        { name: "REST APIs" },
+        { name: "MongoDB" },
+        { name: "MySQL" }
       ]
     },
     {
       title: "Tools & Technologies",
       icon: <Wrench className="h-6 w-6 text-primary" />,
       skills: [
-        { name: "Git", level: 80 },
-        { name: "Firebase", level: 75 },
-        { name: "Vercel", level: 70 },
-        { name: "VS Code", level: 90 }
+        { name: "Git" },
+        { name: "Firebase" },
+        { name: "Vercel" },
+        { name: "VS Code" }
       ]
     },
     {
       title: "Problem Solving",
       icon: <Brain className="h-6 w-6 text-primary" />,
       skills: [
-        { name: "Data Structures", level: 75 },
-        { name: "Algorithms", level: 70 },
-        { name: "LeetCode", level: 65 },
-        { name: "Debugging", level: 80 }
+        { name: "Data Structures" },
+        { name: "Algorithms" },
+        { name: "LeetCode" },
+        { name: "Debugging" }
       ]
     }
   ];
@@ -83,19 +83,11 @@ export const Skills = () => {
                   <h3 className="font-semibold text-lg">{category.title}</h3>
                 </div>
                 
-                <div className="space-y-3">
+                <div className="space-y-2">
                   {category.skills.map((skill, skillIndex) => (
-                    <div key={skillIndex}>
-                      <div className="flex justify-between items-center mb-1">
-                        <span className="text-sm font-medium">{skill.name}</span>
-                        <span className="text-xs text-muted-foreground">{skill.level}%</span>
-                      </div>
-                      <div className="w-full bg-muted rounded-full h-2">
-                        <div 
-                          className="bg-primary h-2 rounded-full transition-all duration-1000 ease-out"
-                          style={{ width: `${skill.level}%` }}
-                        />
-                      </div>
+                    <div key={skillIndex} className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-primary rounded-full" />
+                      <span className="text-sm font-medium">{skill.name}</span>
                     </div>
                   ))}
                 </div>

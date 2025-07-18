@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Menu, X, Home, User, Briefcase, Code, Mail, FileText } from 'lucide-react';
+import { Menu, Home, User, Briefcase, Code, Mail, FileText } from 'lucide-react';
+import { ThemeToggle } from './ThemeToggle';
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -76,29 +77,29 @@ export const Navigation = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:block">
-            <NavLinks />
-          </nav>
+          <div className="hidden md:flex items-center gap-4">
+            <nav>
+              <NavLinks />
+            </nav>
+            <ThemeToggle />
+          </div>
 
           {/* Mobile Menu */}
-          <Sheet open={isOpen} onOpenChange={setIsOpen}>
-            <SheetTrigger asChild>
-              <Button variant="ghost" size="sm" className="md:hidden">
-                <Menu className="h-5 w-5" />
-              </Button>
-            </SheetTrigger>
+          <div className="flex items-center gap-2 md:hidden">
+            <ThemeToggle />
+            <Sheet open={isOpen} onOpenChange={setIsOpen}>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="sm">
+                  <Menu className="h-5 w-5" />
+                </Button>
+              </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
               <div className="flex flex-col h-full">
-                <div className="flex items-center justify-between mb-8">
-                  <div className="flex items-center gap-2">
-                    <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                      <span className="text-primary-foreground font-bold">A</span>
-                    </div>
-                    <span className="text-xl font-bold text-gradient">Aayush Arya</span>
+                <div className="flex items-center gap-2 mb-8">
+                  <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+                    <span className="text-primary-foreground font-bold">A</span>
                   </div>
-                  <Button variant="ghost" size="sm" onClick={() => setIsOpen(false)}>
-                    <X className="h-5 w-5" />
-                  </Button>
+                  <span className="text-xl font-bold text-gradient">Aayush Arya</span>
                 </div>
                 
                 <nav className="flex-1">
@@ -113,6 +114,7 @@ export const Navigation = () => {
               </div>
             </SheetContent>
           </Sheet>
+          </div>
         </div>
       </div>
     </header>
